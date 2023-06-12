@@ -13,8 +13,7 @@ The structure of one line of the memory-of-thought files is as:
 - wrap_question: *the full question (including few-shot demonstration and template) sent to Openai API*
 - response: *the original response from Openai API*
     - choices:
-        - tmp_pred: *the prediction of this sampled reasoning path*
-        - 
+        - tmp_pred: *the prediction of this sampled reasoning path; the remaining's structure is the same as the original*
 - response_set_size: *the number of unique Openai API response*
 - pred_count: *the counting of prediction*
 - pred_set_size: *the number of unique prediction*
