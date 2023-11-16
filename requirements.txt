@@ -2,3 +2,4 @@ sklearn
 matplotlib
 sentence-transformers
 jupyter
+openai

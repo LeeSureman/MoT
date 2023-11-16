@@ -77,7 +77,7 @@ python -u run_inference_retrieval.py \
 
 
 
-python tmp_data_process/extract_demos_from_inference_result_new.py \
+python data_process/extract_demos_from_inference_result.py \
 --filtering_criteria entropy \
 --inp_fp $output_dir \
 --entropy_threshold $entropy_threshold \

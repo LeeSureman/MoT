@@ -1,7 +1,6 @@
 export CUDA_VISIBLE_DEVICES=1,2
 exp_tag=main
 demo_seed=5
-entropy_threshold=0.3
 dataset=com_v
 self_consistency_paths=1
 temperature=0
@@ -36,7 +35,7 @@ mkdir $output_dir -p
 log_fp=$output_dir/run_inference_retrieval.log
 output_dir=$output_dir/lm_inference_result.jsonl
 
-python -u run_inference_retrieval_memory_error.py \
+python -u run_mot.py \
 --how_to_divide_demos_for_retrieval $how_to_divide_demos_for_retrieval \
 --lm_format_requirement_at_last $lm_format_requirement_at_last \
 --shuffle_demos_for_lm_retrieval $shuffle_demos_for_lm_retrieval \
