@@ -7,7 +7,7 @@
 [//]: # ()
 [//]: # (Auto-CoT uses more cheers & diversity to SAVE huge manual efforts in chain of thought prompt design, matching or even exceeding performance of manual design on GPT-3.)
 
-The official repository for MoT
+The official repository for MoT. 
 Check out our [paper](https://arxiv.org/pdf/2305.05181.pdf) for more information.
 
 
