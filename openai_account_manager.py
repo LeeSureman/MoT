@@ -242,15 +242,18 @@ class OpenAI_Account_Manager_MultiThread_One_Acount_Many_Used:
         return available_num
 
 def get_account_manager(multi_thread=False,limit_account_num=-1):
+    used_account_fp = 'openai_account_files/used.txt'
+    account_fp = 'openai_account_files/you_account_list.txt'
+    #Email----Password----Openai_API_Key
     if multi_thread:
-        result = OpenAI_Account_Manager_MultiThread_One_Acount_Many_Used('/remote-home/xnli/openai_account_files/used.txt',
-                                                    '/remote-home/xnli/openai_account_files/peiqi_gpt_acount.txt',
+        result = OpenAI_Account_Manager_MultiThread_One_Acount_Many_Used(used_account_fp,
+                                                    account_fp,
                                                     limit_account_num=limit_account_num
                                                     )
         pass
     else:
-        result = OpenAI_Account_Manager('/remote-home/xnli/openai_account_files/used.txt',
-                                        '/remote-home/xnli/openai_account_files/peiqi_gpt_acount.txt')
+        result = OpenAI_Account_Manager(used_account_fp,
+                                        account_fp)
     return result
 
 
