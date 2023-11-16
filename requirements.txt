@@ -3,3 +3,4 @@ matplotlib
 sentence-transformers
 jupyter
 openai
+fitlog
