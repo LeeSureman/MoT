@@ -26,14 +26,20 @@ pip install -r requirements.txt
 Download the datasets from [Google Drive](https://drive.google.com/file/d/1UksTfFms_GyeLpFIFkXFnkCVv6lSrcxp/view?usp=sharing).
 
 ## Run Our Method
+First, fill your account in to a text file, as follows:
+```
+[Email_1]----[Password_1]----[Openai_API_Key_1]
+[Email_2]----[Password_2]----[Openai_API_Key_2]
+...
+```
+Our code supports using multiple openai accounts simultaneously and call openai api in parallel. 
 
-If you want run the entire method:
+If you want to run the entire method:
 ```
 # dataset:[aqua, drop, anli_a1, anli_a2, anli_a3, obqa, com_v, boolq, fact_checker, qa_wikidata]
 dataset=[dataset] bash commands/run_mot_full.sh
 ```
-
-Or you can download the memory of thoughts in pre-thinking, from [Google Drive](https://drive.google.com/file/d/1Rwm3PqGxL6x19oZoXFGso0mpdu7unie6/view?usp=sharing), and run
+Or you can directly download the memory of thoughts in pre-thinking, from [Google Drive](https://drive.google.com/file/d/1Rwm3PqGxL6x19oZoXFGso0mpdu7unie6/view?usp=sharing), and run the subsequent memory filtering and recalling:
 ```
 # dataset:[aqua, drop, anli_a1, anli_a2, anli_a3, obqa, com_v, boolq, fact_checker, qa_wikidata]
 dataset=[dataset] bash commands/run_mot_with_existing_memory.sh
