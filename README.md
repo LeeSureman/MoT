@@ -1,12 +1,5 @@
 # MoT: Memory-of-Thought Enables ChatGPT to Self-Improve (EMNLP 2023)
 
-[//]: # ([![Open Auto-CoT in Colab]&#40;https://colab.research.google.com/assets/colab-badge.svg&#41;]&#40;https://colab.research.google.com/github/amazon-science/auto-cot/blob/main/try_cot_colab.ipynb&#41;)
-
-[//]: # (Cheer AI up with the "let's think step by step" prompt? More plz. *Let’s think not just step by step, but also one by one.*)
-
-[//]: # ()
-[//]: # (Auto-CoT uses more cheers & diversity to SAVE huge manual efforts in chain of thought prompt design, matching or even exceeding performance of manual design on GPT-3.)
-
 The official repository for MoT. 
 Check out our [paper](https://arxiv.org/pdf/2305.05181.pdf) for more information.
 

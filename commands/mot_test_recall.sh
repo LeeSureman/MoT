@@ -32,7 +32,7 @@ demo_c=entropy
 demo_pool_path=demos_tmp/filter_by_${demo_c}/${dataset}_${entropy_threshold}_${filter_no_trigger}.jsonl
 output_dir=experiment/$dataset/${exp_name}
 mkdir $output_dir -p
-log_fp=$output_dir/run_inference_retrieval.log
+log_fp=$output_dir/run_mot.log
 output_dir=$output_dir/lm_inference_result.jsonl
 
 python -u run_mot.py \

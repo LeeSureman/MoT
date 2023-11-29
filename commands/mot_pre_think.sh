@@ -38,10 +38,10 @@ retriever_name="all-mpnet-base-v2"
 
 output_dir=experiment/$dataset/${exp_name}
 mkdir $output_dir -p
-log_fp=$output_dir/run_inference_retrieval.log
+log_fp=$output_dir/run_mot.log
 output_dir=$output_dir/lm_inference_result.jsonl
 
-python -u run_inference_retrieval.py \
+python -u run_mot.py \
 --how_to_divide_demos_for_retrieval $how_to_divide_demos_for_retrieval \
 --lm_format_requirement_at_last $lm_format_requirement_at_last \
 --shuffle_demos_for_lm_retrieval $shuffle_demos_for_lm_retrieval \
